@@ -1,19 +1,31 @@
 @import "../../../../styles/global";
 
 .Nav {
-   &__icon {
+  position: relative;
 
-     &__bar {
-       background: map-get($colors, font);
-       background: black;
-       width: 30px;
-       height: 3px;
-       border-radius: 30px;
-       margin-bottom: 4px;
+  &__icon {
 
-       &:last-child {
-         margin-bottom: 0;
-       }
-     }
-   }
+    &__bar {
+      background: map-get($colors, font);
+      background: black;
+      width: 30px;
+      height: 3px;
+      border-radius: 90px;
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__burger {
+    position: absolute;
+    top: 40px;
+    right: -24px;
+    z-index: 9;
+    text-align: right;
+    background: white;
+    width: 150px;
+  }
 }
