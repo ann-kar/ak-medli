@@ -22,10 +22,35 @@
   &__burger {
     position: absolute;
     top: 40px;
-    right: -24px;
     z-index: 9;
     text-align: right;
     background: white;
     width: 150px;
+    transition: 0.5s;
+
+    &.burgerOff {
+      right: -300px;
+    }
+
+    &.burgerOn {
+      right: -24px;
+    }
+  }
+
+  &__inline {
+    display: none;
+  }
+
+  @include over850() {
+
+    &__icon {
+      display: none;
+    }
+    &__burger {
+      display: none;
+    }
+    &__inline {
+      display: block;
+    }
   }
 }

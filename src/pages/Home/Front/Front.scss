@@ -2,8 +2,9 @@
 
 .Front {
   margin-bottom: $section-margin;
-
   color: map_get($colors, font);
+  display: flex;
+  flex-wrap: wrap;
 
   & > * {
     width: 100%;
@@ -11,19 +12,45 @@
 
   &__banner {
     margin-bottom: $section-margin;
+
+    &__image {
+      width: 100%;
+    }
   }
 
-  &__title {
-    @extend %sectionTitle;
-    margin-bottom: $section-margin / 2;
-  }
+  &__main {
 
-  &__description {
-    @extend %sectionDescription;
-    margin-bottom: $section-margin * 0.75;
-  }
+    &__title {
+      @extend %sectionTitle;
+      margin-bottom: $section-margin / 2;
+    }
 
-  &__button {
-    @extend %button;
+    &__description {
+      @extend %sectionDescription;
+      margin-bottom: $section-margin * 0.75;
+    }
+
+    &__button {
+      @extend %button;
+    }
+      }
+
+  @include over850() {
+
+    &__banner {
+      width: 60%;
+      order: 2;
+      padding-top: 50px;
+    }
+
+    &__main {
+      order: 1;
+      width: 40%;
+      align-self: flex-start;
+
+      &__button {
+        width: 255px;
+      }
+    }
   }
 }

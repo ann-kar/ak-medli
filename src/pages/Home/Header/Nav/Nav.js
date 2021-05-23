@@ -18,11 +18,12 @@ function Nav() {
                 <div className="Nav__icon__bar"/>
                 <div className="Nav__icon__bar"/>
             </div>
-            {burger &&
-            <div className={`Nav__burger`}>
+            <div className={`Nav__burger ${burger ? "burgerOn" : "burgerOff"}`}>
                 <NavList/>
             </div>
-            }
+            <div className="Nav__inline">
+                <NavList/>
+            </div>
         </div>
     )
 }

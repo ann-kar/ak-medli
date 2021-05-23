@@ -3,10 +3,18 @@
 .Home {
   background: map_get($colors, background);
   padding-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
 
   & > * {
     width: 100%;
     padding-left: 24px;
     padding-right: 24px;
+
+    @include over1120() {
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
