@@ -1,0 +1,15 @@
+@import "../../styles/global";
+
+.Logo {
+  display: flex;
+  align-items: flex-start;
+
+  &__image {
+    margin-right: 15px;
+  }
+
+  &__title {
+    font-family: map_get($fonts, title);
+    font-size: 2rem;
+  }
+}

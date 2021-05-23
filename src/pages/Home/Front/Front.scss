@@ -1,0 +1,31 @@
+@import "../../../styles/global";
+
+.Front {
+  margin-bottom: $section-margin;
+
+  color: map_get($colors, font);
+
+  & > * {
+    width: 100%;
+  }
+
+  &__banner {
+    margin-bottom: $section-margin;
+  }
+
+  &__title {
+    font-family: map_get($fonts, title);
+    font-size: 2.5rem;
+    margin-bottom: $section-margin / 2;
+  }
+
+  &__description {
+    font-family: map_get($fonts, main);
+    font-size: 1rem;
+    margin-bottom: $section-margin * 0.75;
+  }
+
+  &__button {
+@extend %button;
+  }
+}

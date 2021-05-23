@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
-$colors: (
-        main: "#FABD20",
-        background: "#FABD20",
-        font: "#131E07",
-        white: "#FFF",
-        black: "#000",
-        lightgray: "#E5E5E5",
-        darkgray: "#7C8176"
-);
 
 $fonts: (
-        title: "Rozha One, serif",
-        main: "Reem Kufi, sans-serif"
-)
+        title: "Rozha One",
+        main: "Reem Kufi"
+);
+
+
+$colors: (
+        main: #FABD20,
+        background: #FEF4E6,
+        font: #131E07,
+        white: #FFF,
+        black: #000,
+        lightgray: #E5E5E5,
+        darkgray: #7C8176,
+);
+
+$section-margin: 2rem;

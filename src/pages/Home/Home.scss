@@ -1,0 +1,11 @@
+@import "../../styles/global";
+
+.Home {
+  background: map_get($colors, background);
+
+  & > * {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 35px;
+  }
+}

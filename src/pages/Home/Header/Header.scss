@@ -1,0 +1,9 @@
+@import "../../../styles/global";
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 47px;
+  margin-bottom: $section-margin;
+}
