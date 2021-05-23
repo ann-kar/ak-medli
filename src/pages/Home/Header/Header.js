@@ -8,7 +8,7 @@ function Header() {
 
     return (
         <div className="Header">
-            <Logo/>
+            <Logo theme="dark"/>
             <Nav />
         </div>
     )

@@ -4,12 +4,26 @@
   display: flex;
   align-items: flex-start;
 
-  &__image {
+  &__shape {
     margin-right: 15px;
   }
 
-  &__title {
-    font-family: map_get($fonts, title);
-    font-size: 2rem;
+  &__main {
+    height: 47px;
+    
+    &__path {
+
+      &.dark {
+        fill: map_get($colors, font)
+      }
+
+      &.light {
+        fill: map_get($colors, white)
+      }
+    }
+
+    &__circle {
+      fill: map_get($colors, main);
+    }
   }
 }

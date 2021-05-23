@@ -7,7 +7,7 @@ function Footer() {
 
     return (
         <div className="Footer">
-            <Logo/>
+            <Logo theme="light"/>
             <Form/>
             <SiteMap/>
         </div>
