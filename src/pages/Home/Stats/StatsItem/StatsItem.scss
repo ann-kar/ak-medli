@@ -1,0 +1,34 @@
+@import "../../../../styles/global";
+
+.StatsItem {
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  &:last-child {
+    margin-bottom: 0
+  }
+
+  & > * {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: map_get($fonts, title);
+    color: map_get($colors, main);
+    font-size: 4rem;
+    line-height: 4.75rem;
+  }
+
+  &__description {
+    font-family: map_get($fonts, main);
+    color: map_get($colors, font);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0 2rem;
+  }
+}

@@ -1,8 +1,7 @@
 import React from "react";
 
 import "./Home.scss";
-import {Header, Front} from "../Home";
-
+import {Header, Front, Stats, Community, Benefits, Footer} from "../Home";
 
 function Home() {
 
@@ -10,6 +9,10 @@ function Home() {
         <div className="Home">
             <Header/>
             <Front/>
+            <Stats/>
+            <Community />
+            <Benefits />
+            <Footer />
         </div>
     )
 }

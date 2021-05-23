@@ -1,0 +1,20 @@
+@import "../../../styles/global";
+
+.Community {
+
+  background: map_get($colors, main);
+  padding: 0;
+  text-align: center;
+  position: relative;
+
+  &__title {
+    @extend %sectionTitle;
+    padding-top: $section-margin * 1.5;
+    padding-bottom: $section-margin;
+  }
+
+  &__description {
+    @extend %sectionDescription;
+    padding-bottom: $section-margin * 3;
+  }
+}

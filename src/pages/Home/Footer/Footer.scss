@@ -1,0 +1,9 @@
+@import "../../../styles/global";
+
+.Footer {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 64px;
+  padding-bottom: 35px;
+  background: map_get($colors, font);
+}

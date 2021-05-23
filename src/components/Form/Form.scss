@@ -1,0 +1,30 @@
+@import "../../styles/global";
+
+.Form {
+  padding-top: 56px;
+  padding-bottom: 64px;
+  color: map_get($colors, darkgray);
+  font-family: map_get($fonts, main);
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__main {
+
+    &__input {
+      @extend %button;
+      border: 1px solid map_get($colors, darkgray);
+      border-radius: 8px;
+      background: transparent;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    &__button {
+      @extend %button;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../styles/global";
+
+.Benefits {
+  padding-bottom: 64px;
+
+  &__title {
+    @extend %sectionTitle;
+    padding-top: $section-margin * 3;
+    padding-bottom: 36px;
+  }
+
+  &__description {
+    @extend %sectionDescription;
+    padding-bottom: 36px;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../styles/global";
+
+.SiteMap {
+  font-family: map_get($fonts, main);
+  font-size: 18px;
+  line-height: 27px;
+
+  &__header {
+    color: map_get($colors, darkgray);
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 19px;
+  }
+
+  &__list {
+    color: map_get($colors, lightgray);
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+  }
+}
