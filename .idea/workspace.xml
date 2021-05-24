@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365e9e24-2e28-45be-9286-72907b50e32e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Benefits/Benefits.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Benefits/Benefits.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Community/Community.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Community/Community.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/Form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/Form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Footer/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Footer/Footer.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,17 +22,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/Home/Community/Community.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="179">
+              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/Home/Benefits/Benefits.scss">
+        <entry file="file://$PROJECT_DIR$/src/components/Form/Form.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -107,12 +107,10 @@
         <option value="$PROJECT_DIR$/src/pages/Home/Front/Front.js" />
         <option value="$PROJECT_DIR$/src/styles/_variables.scss" />
         <option value="$PROJECT_DIR$/src/pages/Home/Header/Nav/NavList/NavList.scss" />
-        <option value="$PROJECT_DIR$/src/pages/Home/Footer/Footer.scss" />
         <option value="$PROJECT_DIR$/src/components/Terms/Terms.scss" />
         <option value="$PROJECT_DIR$/src/pages/Home/Benefits/Benefits.js" />
         <option value="$PROJECT_DIR$/src/components/Video/Video.scss" />
         <option value="$PROJECT_DIR$/src/components/Video/Video.js" />
-        <option value="$PROJECT_DIR$/src/components/Form/Form.scss" />
         <option value="$PROJECT_DIR$/src/components/Form/Form.js" />
         <option value="$PROJECT_DIR$/src/styles/_breakpoints.scss" />
         <option value="$PROJECT_DIR$/src/pages/Home/Stats/Stats.js" />
@@ -127,6 +125,8 @@
         <option value="$PROJECT_DIR$/src/styles/global.scss" />
         <option value="$PROJECT_DIR$/src/pages/Home/Community/Community.scss" />
         <option value="$PROJECT_DIR$/src/pages/Home/Benefits/Benefits.scss" />
+        <option value="$PROJECT_DIR$/src/pages/Home/Footer/Footer.scss" />
+        <option value="$PROJECT_DIR$/src/components/Form/Form.scss" />
       </list>
     </option>
   </component>
@@ -177,6 +177,13 @@
               <item name="medli" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medli" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="medli" type="b2602c69:ProjectViewProjectNode" />
@@ -266,16 +273,15 @@
       <option name="presentableId" value="Default" />
       <updated>1621758155676</updated>
       <workItem from="1621758157128" duration="39401000" />
-      <workItem from="1621843581006" duration="32190000" />
+      <workItem from="1621843581006" duration="32436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71591000" />
+    <option name="totallyTimeSpent" value="71837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49674267" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -642,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Home/Footer/Footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/_fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -674,13 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-33">
           <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Form/Form.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" column="7" lean-forward="true" selection-start-line="95" selection-start-column="7" selection-end-line="95" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -715,17 +707,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Home/Community/Community.scss">
+    <entry file="file://$PROJECT_DIR$/src/pages/Home/Benefits/Benefits.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="170">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Home/Benefits/Benefits.scss">
+    <entry file="file://$PROJECT_DIR$/src/pages/Home/Footer/Footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Home/Community/Community.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Form/Form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>

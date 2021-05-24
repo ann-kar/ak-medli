@@ -2,8 +2,9 @@
 
 .Form {
   width: 100%;
-  padding-top: 56px;
+  padding-top: $font-size * 3;
   color: map_get($colors, darkgray);
+  padding-bottom: $font-size * 3;
 
   &__info {
     margin-bottom: 16px;
@@ -28,6 +29,7 @@
   }
 
   @include over400() {
+    padding-bottom: 0;
     width: 100%;
     max-width: 450px;
     margin-left: 0;
@@ -54,7 +56,6 @@
         margin: 8px;
       }
     }
-
   }
 
   @include over850() {
