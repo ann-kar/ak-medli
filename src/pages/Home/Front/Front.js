@@ -6,7 +6,7 @@ import hero from "../../../assets/hero.svg";
 function Front() {
 
     return (
-        <div className="Front">
+        <div className="Front container">
             <div className="Front__banner">
                 <img className="Front__banner__image" src={hero} alt="woman reading & smiling"/>
             </div>

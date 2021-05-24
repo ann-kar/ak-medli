@@ -3,14 +3,36 @@
 .Video {
   position: absolute;
   left: 0;
-  //margin: 0 24px;
-  width: calc(100% - 48px);
+  top: 0;
   width: 100%;
-  padding-top: (160px / 327px) * 100%;
+  padding-top: (603px / 1240px) * 100%;
   background-image: url("../../assets/video.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  bottom: -($section-margin * 2);
+  border-radius: 8px;
 
+  &__icon {
+    position: absolute;
+    top: calc(50% - 39px);
+    left: calc(50% - 39px);
+    z-index: 5;
+    width: 78px;
+    height: 78px;
+    background: #FEF4E6;
+    opacity: 0.8;
+    border-radius: 50%;
+
+    &__arrow {
+      position: absolute;
+      z-index: 7;
+      top: calc(50% - 17px);
+      left: calc(50% - 17px);
+      opacity: 1;
+
+      //background: #131E07;
+      height: 34px;
+      width: 34px;
+    }
+  }
 
 }

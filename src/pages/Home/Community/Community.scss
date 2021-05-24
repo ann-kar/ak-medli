@@ -1,20 +1,70 @@
 @import "../../../styles/global";
 
 .Community {
-
+  width: 100%;
   background: map_get($colors, main);
-  padding: 0;
-  text-align: center;
-  position: relative;
+  padding: 64px 24px;
+  text-align: left;
 
   &__title {
     @extend %sectionTitle;
-    padding-top: $section-margin * 1.5;
-    padding-bottom: $section-margin;
+    margin-bottom: 40px;
   }
 
   &__description {
+    text-align: left;
     @extend %sectionDescription;
-    padding-bottom: $section-margin * 3;
+    padding-bottom: 75px;
+  }
+
+  &__video {
+    position: relative;
+      margin-left: 24px;
+      margin-right: 24px;
+  }
+
+  @include over850() {
+    text-align: center;
+    padding-bottom: 56px;
+
+    &__description {
+      font-size: 24px;
+      line-height: 36px;
+      width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 75px;
+    }
+
+    &__video {
+      padding-bottom: 150px;
+    }
+    margin-bottom: 150px;
+  }
+
+  @include over1000() {
+    //padding-bottom: 56px;
+
+    &__description {
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__video {
+      padding-bottom: 280px;
+    }
+    margin-bottom: 200px;
+  }
+
+  @include over1400() {
+
+    &__video {
+      width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 150px;
+    }
+    margin-bottom: 200px;
   }
 }

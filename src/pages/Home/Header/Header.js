@@ -7,7 +7,7 @@ import {Nav} from "../Header";
 function Header() {
 
     return (
-        <div className="Header">
+        <div className="Header container">
             <Logo theme="dark"/>
             <Nav />
         </div>

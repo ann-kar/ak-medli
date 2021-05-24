@@ -5,7 +5,7 @@
   width: 100%;
   background: map_get($colors, white);
   color: map_get($colors, font);
-  padding: 2rem;
+  padding: 40px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -39,6 +39,47 @@
     font-family: map_get($fonts, main);
     font-size: 18px;
     line-height: 27px;
-    padding: 0 0rem;
+    padding: 0 20px;
+  }
+
+  @include over400() {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  @include over540() {
+    width: 200px;
+    margin-right: 50px;
+    margin-left: 50px;
+    flex-shrink: 0;
+  }
+
+  @include over850() {
+    width: 30%;
+    align-self: flex-start;
+    padding: 40px 20px;
+
+    &__image {
+      margin-bottom: 34px;
+    }
+
+    &__description {
+      font-size: 24px;
+      line-height: 36px;
+      padding: 0;
+    }
+  }
+
+  @include over1000() {
+
+    padding: 40px;
+
+    &__image {
+      margin-bottom: 68px;
+    }
+
+
   }
 }

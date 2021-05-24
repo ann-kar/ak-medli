@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 
   &:last-child {
     margin-bottom: 0
@@ -27,8 +27,21 @@
   &__description {
     font-family: map_get($fonts, main);
     color: map_get($colors, font);
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 20px;
+    line-height: 30px;
     padding: 0 2rem;
   }
+
+  @include over850() {
+    width: 33%;
+    align-self: flex-start;
+    padding-bottom: 0;
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0 50px;
+  }
+
 }

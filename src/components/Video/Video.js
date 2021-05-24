@@ -1,16 +1,19 @@
 import React from "react";
 
 import "./Video.scss";
-import video from "../../assets/video.jpg";
+import videoIcon from "../../assets/videoIcon.svg";
 
 function Video() {
 
     return (
-        <div className="Video">
-            {/*<img className="Video__preview" src={video}  alt="testimonial video"/>*/}
-            <div className="Video__icon">
+        <>
+            <div className="Video">
+                <button className="Video__icon">
+                    {/*<div className="Video__icon__arrow"></div>*/}
+                    <img className="Video__icon__arrow" src={videoIcon} />
+                </button>
             </div>
-        </div>
+        </>
     )
 }
 

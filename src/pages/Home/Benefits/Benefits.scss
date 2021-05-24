@@ -1,7 +1,10 @@
 @import "../../../styles/global";
 
 .Benefits {
+  display: flex;
+  flex-wrap: wrap;
   padding-bottom: 64px;
+  justify-content: space-around;
 
   &__title {
     @extend %sectionTitle;
@@ -12,5 +15,17 @@
   &__description {
     @extend %sectionDescription;
     padding-bottom: 36px;
+  }
+
+  &__items {
+
+    @include over540 {
+      display: flex;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      overflow-x: scroll;
+    }
+
   }
 }

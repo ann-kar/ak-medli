@@ -30,14 +30,16 @@ function Benefits() {
     ];
 
     return (
-        <div className="Benefits">
+        <div className="Benefits container">
             <h2 className="Benefits__title">What you’re getting?</h2>
             <h3 className="Benefits__description">We bring you personalized development programs that are backed by research and crafted from the years of experience</h3>
+            <div className="Benefits__items">
             {benefitsData.map(el => <BenefitsItem
                                                     key={`ben-${el.id}`}
                                                     title={el.title}
                                                     description={el.description}
                                                     image={el.image}/>)}
+            </div>
         </div>
     )
 }

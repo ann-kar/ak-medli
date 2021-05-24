@@ -1,9 +1,36 @@
 @import "../../../styles/global";
 
 .Footer {
-  padding-left: 0;
-  padding-right: 0;
+  width: 100%;
   padding-top: 64px;
   padding-bottom: 35px;
   background: map_get($colors, font);
-}
+
+  &__main {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__logoCnt {
+      width: 100%;
+
+      @include over850() {
+        width: 30%;
+        align-self: flex-end;
+      }
+      @include over1000() {
+        width: 100%;
+      }
+
+
+
+    }
+  }
+
+
+  }
+
+
+//@include over850() {
+//  margin-top: 55px;
+//}

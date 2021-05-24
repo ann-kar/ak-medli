@@ -1,8 +1,8 @@
 @import "../../styles/global";
 
 .Form {
+  width: 100%;
   padding-top: 56px;
-  padding-bottom: 64px;
   color: map_get($colors, darkgray);
   font-family: map_get($fonts, main);
 
@@ -25,6 +25,76 @@
 
     &__button {
       @extend %button;
+    }
+  }
+
+  @include over400() {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 0;
+    margin-right: auto;
+
+    &__main {
+      border: 1px solid map_get($colors, darkgray);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+
+      &__input {
+        border: none;
+        margin-bottom: 0;
+        width: 100%;
+        flex-shrink: 1;
+        height: 50px;
+      }
+
+      &__button {
+        flex-shrink: 0;
+        height: 34px;
+        width: 113px;
+        margin: 8px;
+      }
+    }
+
+  }
+
+  @include over850() {
+    width: 70%;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: auto;
+    justify-self: flex-end;
+    text-align: right;
+  }
+
+  @include over1000() {
+    width: 40%;
+    order: 2;
+    padding-top: 64px;
+    padding-bottom: 0;
+
+    &__main {
+      width: 100%;
+      border: 1px solid map_get($colors, darkgray);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+
+      &__input {
+        border: none;
+        margin-bottom: 0;
+        width: 100%;
+        flex-shrink: 1;
+        height: 50px;
+      }
+
+      &__button {
+        flex-shrink: 0;
+        height: 34px;
+        width: 113px;
+        margin: 8px;
+      }
     }
   }
 }

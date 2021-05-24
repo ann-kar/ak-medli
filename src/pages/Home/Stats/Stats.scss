@@ -1,8 +1,19 @@
+@import "../../../styles/global";
+
 .Stats {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
   margin-top: 3rem;
+
+  @include over850() {
+    margin-bottom: 220px;
+    justify-content: space-between;
+  }
+
+  @include over1000() {
+    margin-bottom: 220px;
+    justify-content: space-around;
+  }
 }

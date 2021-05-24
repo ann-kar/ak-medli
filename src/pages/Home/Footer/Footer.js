@@ -7,9 +7,13 @@ function Footer() {
 
     return (
         <div className="Footer">
-            <Logo theme="light"/>
-            <Form/>
-            <SiteMap/>
+            <div className="Footer__main container">
+                <div className="Footer__main__logoCnt">
+                    <Logo theme="light"/>
+                </div>
+                <Form/>
+                <SiteMap/>
+            </div>
         </div>
     )
 }

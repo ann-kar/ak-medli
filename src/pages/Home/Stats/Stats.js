@@ -26,7 +26,7 @@ function Stats() {
     ];
 
     return (
-        <div className="Stats">
+        <div className="Stats container">
             {stats.map(el => <StatsItem key={`stat-${el.id}`} title={el.title} description={el.description}/>)}
         </div>
     )

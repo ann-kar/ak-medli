@@ -1,9 +1,16 @@
 @import "../../styles/global";
 
 .SiteMap {
+  width: 100%;
   font-family: map_get($fonts, main);
   font-size: 18px;
   line-height: 27px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__category {
+    width: 100%;
+  }
 
   &__header {
     color: map_get($colors, darkgray);
@@ -16,5 +23,19 @@
     color: map_get($colors, lightgray);
     list-style-type: none;
     margin-bottom: 1.5rem;
+  }
+
+  @include over400() {
+    &__category {
+      width: 33.3%;
+      height: 100%;
+      padding-right: 16px;
+      padding-top: 64px;
+    }
+  }
+
+  @include over1000() {
+    width: 60%;
+    order: 1;
   }
 }
