@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ak-medli/static/css/main.6b47af16.chunk.css",
+    "main.js": "/ak-medli/static/js/main.d4db0d75.chunk.js",
+    "main.js.map": "/ak-medli/static/js/main.d4db0d75.chunk.js.map",
+    "runtime-main.js": "/ak-medli/static/js/runtime-main.f2024121.js",
+    "runtime-main.js.map": "/ak-medli/static/js/runtime-main.f2024121.js.map",
+    "static/js/2.ec2b7979.chunk.js": "/ak-medli/static/js/2.ec2b7979.chunk.js",
+    "static/js/2.ec2b7979.chunk.js.map": "/ak-medli/static/js/2.ec2b7979.chunk.js.map",
+    "index.html": "/ak-medli/index.html",
+    "static/css/main.6b47af16.chunk.css.map": "/ak-medli/static/css/main.6b47af16.chunk.css.map",
+    "static/js/2.ec2b7979.chunk.js.LICENSE.txt": "/ak-medli/static/js/2.ec2b7979.chunk.js.LICENSE.txt",
+    "static/media/chat.1a101426.svg": "/ak-medli/static/media/chat.1a101426.svg",
+    "static/media/coach.378626a4.svg": "/ak-medli/static/media/coach.378626a4.svg",
+    "static/media/ellipse.42476d1c.svg": "/ak-medli/static/media/ellipse.42476d1c.svg",
+    "static/media/hero.5da914cf.svg": "/ak-medli/static/media/hero.5da914cf.svg",
+    "static/media/textChat.eecfe5a5.svg": "/ak-medli/static/media/textChat.eecfe5a5.svg",
+    "static/media/Video.scss": "/ak-medli/static/media/video.ba1444f5.jpg",
+    "static/media/videoIcon.fadc359c.svg": "/ak-medli/static/media/videoIcon.fadc359c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f2024121.js",
+    "static/js/2.ec2b7979.chunk.js",
+    "static/css/main.6b47af16.chunk.css",
+    "static/js/main.d4db0d75.chunk.js"
+  ]
+}
