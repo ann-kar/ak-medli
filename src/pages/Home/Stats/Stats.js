@@ -7,27 +7,25 @@ function Stats() {
 
     const stats = [
         {
-            title: "230+",
-            description: "Scientifically\n" +
-                "based tests",
+            name: "230+",
+            description: "Scientifically based tests",
             id: 0
         },
         {
-            title: "10,000+",
+            name: "10,000+",
             description: "Medical recommendations",
             id: 1
         },
         {
-            title: "25M+",
+            name: "25M+",
             description: "Students learning",
             id: 2
         }
-
     ];
 
     return (
         <div className="Stats container">
-            {stats.map(el => <StatsItem key={`stat-${el.id}`} title={el.title} description={el.description}/>)}
+            {stats.map(el => <StatsItem key={`stat-${el.id}`} name={el.name} description={el.description}/>)}
         </div>
     )
 }

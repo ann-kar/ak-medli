@@ -12,7 +12,7 @@ function Benefits() {
         {
             title: "1 FREE chat session",
             description: "Start with a free text based chat session online",
-            image: textChat,
+            image: chat,
             id: 0
         },
         {

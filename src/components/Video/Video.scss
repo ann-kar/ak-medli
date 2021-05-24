@@ -18,9 +18,10 @@
     z-index: 5;
     width: 78px;
     height: 78px;
-    background: #FEF4E6;
+    background: map_get($colors, videoIcon);
     opacity: 0.8;
     border-radius: 50%;
+    transform: scale(0.6);
 
     &__arrow {
       position: absolute;
@@ -28,11 +29,16 @@
       top: calc(50% - 17px);
       left: calc(50% - 17px);
       opacity: 1;
-
-      //background: #131E07;
       height: 34px;
       width: 34px;
+      pointer-events: none;
+    }
+
+    @include over850 {
+      transform: scale(0.8);
+    }
+    @include over1120 {
+      transform: scale(1);
     }
   }
-
 }

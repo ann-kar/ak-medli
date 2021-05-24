@@ -10,13 +10,11 @@
   margin-bottom: calc((100vw - 48px) * 0.48 * 0.4 + 64px);
 
   &__title {
-    @extend %sectionTitle;
     text-align: left;
     padding-bottom: $font-size * 2;
   }
 
   &__description {
-    @extend %sectionDescription;
     text-align: left;
     padding-bottom: 75px;
   }
@@ -28,45 +26,41 @@
 
   @include over540() {
 
-    &__title {
+    &__title, &__description {
       text-align: center;
       margin: 0 auto;
+    }
+
+    &__title {
       max-width: 515px;
     }
 
     &__description {
-      text-align: center;
       max-width: 400px;
-      margin: 0 auto;
     }
   }
 
   @include over850() {
 
-    &__description {
-      padding-bottom: 75px;
-    }
-  }
+    margin-bottom: calc((100vw - 48px) * 0.48 * 0.4 + 150px);
 
-  @include over1120() {
     &__title {
-      @include sectionTitleLarge;
       max-width: 850px;
     }
 
     &__description {
-      @include sectionDescriptionLarge;
-      max-width: 500px;
+      padding-bottom: 75px;
+      max-width: 450px;
     }
   }
 
   @include over1240() {
 
-     & > * {
-       width: 1240px;
-       margin-left: auto;
-       margin-right: auto;
-     }
+    & > * {
+      width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   @include over1400() {

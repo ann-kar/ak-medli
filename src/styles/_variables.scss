@@ -2,10 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 @import "breakpoints";
 
-$fonts: (
-        title: "Rozha One",
-        main: "Reem Kufi"
-);
+$font-title: "Rozha One", serif;
+$font-main: "Reem Kufi", sans-serif;
 
 $colors: (
         main: #FABD20,
@@ -15,6 +13,7 @@ $colors: (
         black: #000,
         lightgray: #E5E5E5,
         darkgray: #7C8176,
+        videoIcon: #FEF4E6,
 );
 
 $font-size: 20px;

@@ -2,13 +2,14 @@
 @import "variables";
 @import "placeholders";
 @import "breakpoints";
+@import "fonts";
 
 .container {
   margin-left: 24px;
   margin-right: 24px;
 
   @media screen and (min-width: 1120px) {
-    width: 1120px;
+    width: 1120px - 48px;
     margin-left: auto;
     margin-right: auto;
   }

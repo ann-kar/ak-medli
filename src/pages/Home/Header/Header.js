@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Header.scss";
 import {Logo} from "../../../components";
-import {Nav} from "../Header";
+import Nav from "../Header/Nav/Nav";
 
 function Header() {
 

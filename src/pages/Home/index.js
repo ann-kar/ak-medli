@@ -5,6 +5,4 @@ import Community from "./Community/Community";
 import Benefits from "./Benefits/Benefits";
 import Footer from "./Footer/Footer";
 
-import Home from "./Home";
-
-export {Header, Front, Stats, Community, Benefits, Footer, Home}
+export {Header, Front, Stats, Community, Benefits, Footer}

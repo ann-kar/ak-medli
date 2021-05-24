@@ -24,8 +24,12 @@
     top: 40px;
     z-index: 9;
     text-align: right;
-    background: white;
-    width: 150px;
+    background: map_get($colors, background);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid map_get($colors, white);
+    border-right: none;
+    width: 200px;
     transition: 0.5s;
 
     &.burgerOff {

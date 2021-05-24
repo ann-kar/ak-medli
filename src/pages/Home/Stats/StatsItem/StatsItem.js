@@ -2,10 +2,10 @@ import React from "react";
 
 import "./StatsItem.scss";
 
-function StatsItem({title, description}) {
+function StatsItem({name, description}) {
     return (
         <div className="StatsItem">
-            <h2 className="StatsItem__title">{title}</h2>
+            <h2 className="StatsItem__name">{name}</h2>
             <h3 className="StatsItem__description">{description}</h3>
         </div>
     )

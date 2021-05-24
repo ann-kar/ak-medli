@@ -1,7 +1,7 @@
 @mixin over400 {
   @media (min-width: 400px) { @content; }
 }
-//
+
 @mixin over540 {
   @media (min-width: 540px) { @content; }
 }
@@ -15,14 +15,9 @@
 }
 
 @mixin over1000 {
-  @media (min-width: 1008px) { @content; }
+  @media (min-width: 1000px) { @content; }
 }
 
-@mixin over1070 {
-  @media (min-width: 1070px) { @content; }
-}
-
-//home
 @mixin over1120 {
   @media (min-width: 1120px) { @content; }
 }

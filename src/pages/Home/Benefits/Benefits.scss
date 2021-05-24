@@ -6,18 +6,11 @@
   padding-bottom: 64px;
   justify-content: space-around;
 
-  &__title {
-    @extend %sectionTitle;
-    padding-bottom: 36px;
-  }
-
-  &__description {
-    @extend %sectionDescription;
+  &__title, &__description {
     padding-bottom: 36px;
   }
 
   &__items {
-
     @include over540 {
       display: flex;
       flex-wrap: wrap;
@@ -27,7 +20,7 @@
 
   @include over540() {
     &__title {
-   text-align: center;
+      text-align: center;
     }
 
     &__description {
@@ -36,14 +29,16 @@
     }
   }
 
+  @include over850() {
+    padding-bottom: $section-margin * 2;
+  }
+
   @include over1120() {
     &__title {
-      @include sectionTitleLarge;
       max-width: 850px;
     }
 
     &__description {
-      @include sectionDescriptionLarge;
       text-align: center;
       max-width: 600px;
     }

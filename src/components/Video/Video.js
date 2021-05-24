@@ -9,8 +9,7 @@ function Video() {
         <>
             <div className="Video">
                 <button className="Video__icon">
-                    {/*<div className="Video__icon__arrow"></div>*/}
-                    <img className="Video__icon__arrow" src={videoIcon} />
+                    <img className="Video__icon__arrow" src={videoIcon} alt="play button" />
                 </button>
             </div>
         </>

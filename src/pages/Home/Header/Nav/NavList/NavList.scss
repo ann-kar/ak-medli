@@ -2,11 +2,13 @@
 
 .NavList {
   list-style-type: none;
-  font-family: map_get($fonts, main);
+  font-family: $font-main;
   font-size: 1.5rem;
   padding-right: 1.5rem;
 
   & > li {
+
+    line-height: 50px;
 
     .NavList__link-active {
       position: relative;
@@ -18,8 +20,8 @@
         height: 8px;
         right: -16px;
         top: calc(50% - 4px);
-        background: map_get($colors, main);
         border-radius: 50%;
+        background: map_get($colors, main);
 
         @include over850() {
           left: calc(50% - 4px);
@@ -34,38 +36,31 @@
     justify-items: flex-end;
     padding-right: 0;
 
-    & > li {
-
-      line-height: 50px;
-      margin: 0 10px;
-
-      &:last-child {
-        margin-left: 10px;
-        margin-right: 0;
-        height: 50px;
-        width: 124px;
-        background: map_get($colors, main);
-        border-radius: 8px;
-        text-align: center;
-      }
+    & > li:last-child {
+      margin-right: 0;
+      height: 50px;
+      width: 124px;
+      background: map_get($colors, main);
+      border-radius: 8px;
+      text-align: center;
     }
   }
+}
 
-  & > li {
+$breakpoints: (
+        850px: 10px,
+        1000px: 20px,
+        1240px: 30px,
+);
 
-    @include over1000() {
-      margin: 0 20px;
+@each $width, $margin in $breakpoints {
+  @media screen and (min-width: $width) {
+
+    .NavList > li {
+      margin: 0 $margin;
 
       &:last-child {
-        margin-left: 20px;
-      }
-    }
-
-    @include over1240() {
-      margin: 0 30px;
-
-      &:last-child {
-        margin-left: 30px;
+        margin-left: $margin;
       }
     }
   }

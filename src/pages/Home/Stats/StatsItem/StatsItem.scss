@@ -18,14 +18,17 @@
     text-align: center;
   }
 
-  &__title {
-    @include sectionTitleLarge();
-    font-family: map_get($fonts, title);
+  &__name {
+    font-family: $font-title;
+    font-size: $font-size * 4;
+    line-height: $font-size * 4.75;
     color: map_get($colors, main);
   }
 
   &__description {
-    @extend %sectionDescription;
+    font-family: $font-main;
+    font-size: $font-size;
+    line-height: $font-size * 1.5;
     color: map_get($colors, font);
     padding-left: $font-size * 2;
     padding-right: $font-size * 2;
@@ -34,22 +37,24 @@
   @include over540() {
 
     width: calc(540px - 48px);
+    padding-bottom: 36px;
 
-    &__title {
+    &__name, &__description {
       width: 50%;
-      font-size: 70px;
       display: flex;
+    }
+
+    &__name {
+      font-size: $font-size * 3;
       justify-content: flex-end;
     }
+
     &__description {
-      width: 50%;
-      display: flex;
       justify-content: flex-start;
       text-align: left;
       padding-left: 1rem;
       padding-right: 1rem;
     }
-    padding-bottom: 36px;
   }
 
   @include over850() {
@@ -64,13 +69,13 @@
       justify-content: center;
     }
 
-    &__title {
-      font-size: 80px;
+    &__name {
+      font-size: $font-size * 4;
+      line-height: $font-size * 4.75;
     }
 
     &__description {
       max-width: 110px;
-
     }
   }
 }
