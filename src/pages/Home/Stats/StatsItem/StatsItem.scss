@@ -31,14 +31,46 @@
     padding-right: $font-size * 2;
   }
 
+  @include over540() {
+
+    width: calc(540px - 48px);
+
+    &__title {
+      width: 50%;
+      font-size: 70px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__description {
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      text-align: left;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    padding-bottom: 36px;
+  }
+
   @include over850() {
+
     width: 33%;
     padding-bottom: 0;
-  }
+    justify-content: center;
 
-  &__description {
-    @include sectionDescriptionLarge();
-    padding: 0 $section-margin;
-  }
+    & > * {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
 
+    &__title {
+      font-size: 80px;
+    }
+
+    &__description {
+      max-width: 110px;
+
+    }
+  }
 }

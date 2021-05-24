@@ -39,12 +39,32 @@
     }
   }
 
-  @include over850() {
+  @include over400() {
 
     &__banner {
+      max-width: calc(540px - 48px);
+      margin: 0 auto 36px auto;
+    }
+
+    &__main__title, &__main__description {
+      max-width: 400px;
+    }
+
+    &__main__button {
+      max-width: 255px;
+    }
+
+    }
+
+  @include over650() {
+
+    &__banner {
+
       width: 60%;
+      max-width: none;
       order: 2;
-      padding-top: $section-margin;
+      padding-top: $section-margin * 1.5;
+      margin-bottom: 0;
     }
 
     &__main {
@@ -52,8 +72,49 @@
       width: 40%;
       align-self: flex-start;
 
+      &__title, &__description {
+        max-width: 100%;
+      }
+      &__title {
+        font-size: 40px;
+        line-height: 40px * 1.17;
+      }
+      &__description {
+        font-size: 20px;
+        line-height: 20px * 1.5;
+      }
       &__button {
-        width: 255px;
+        width: 200px;
+        height: 42px;
+      }
+    }
+  }
+
+
+  @include over850() {
+
+    &__banner {
+
+      width: 60%;
+      order: 2;
+      padding-top: $section-margin * 2;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+
+      &__image {
+        width: 100%;
+
+      }
+    }
+
+    &__main {
+      order: 1;
+      width: 40%;
+      align-self: flex-start;
+
+      &__title, &__description {
+        max-width: 100%;
       }
     }
   }
@@ -64,6 +125,7 @@
 
       &__title {
         @include sectionTitleLarge();
+
         &__accent {
           margin-left: 0;
           height: $font-size * 2;
