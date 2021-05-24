@@ -5,6 +5,7 @@
   padding-top: 64px;
   padding-bottom: 35px;
   background: map_get($colors, font);
+  font-family: map_get($fonts, main);
 
   &__main {
 

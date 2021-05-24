@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Footer.scss";
-import {Logo, Form, SiteMap} from "../../../components";
+import {Logo, Form, SiteMap, Terms} from "../../../components";
 
 function Footer() {
 
@@ -13,6 +13,7 @@ function Footer() {
                 </div>
                 <Form/>
                 <SiteMap/>
+                <Terms/>
             </div>
         </div>
     )
