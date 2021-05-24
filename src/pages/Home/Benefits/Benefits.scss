@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 64px;
-  justify-content: space-around;
+  justify-content: flex-start;
 
   &__title, &__description {
     padding-bottom: 36px;
@@ -18,30 +18,13 @@
     }
   }
 
-  @include over540() {
-    &__title {
-      text-align: center;
-    }
-
-    &__description {
-      text-align: center;
-      max-width: 70vw;
-    }
-  }
-
   @include over850() {
     padding-bottom: $section-margin * 2;
   }
 
   @include over1120() {
-    &__title {
-      max-width: 850px;
-    }
-
     &__description {
-      text-align: center;
       max-width: 600px;
     }
   }
-
 }
