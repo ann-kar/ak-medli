@@ -6,10 +6,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 4rem;
+  align-self: flex-start;
+  padding-bottom: $font-size * 4;
 
   &:last-child {
-    margin-bottom: 0
+    padding-bottom: 0;
   }
 
   & > * {
@@ -18,30 +19,26 @@
   }
 
   &__title {
+    @include sectionTitleLarge();
     font-family: map_get($fonts, title);
     color: map_get($colors, main);
-    font-size: 4rem;
-    line-height: 4.75rem;
   }
 
   &__description {
-    font-family: map_get($fonts, main);
+    @extend %sectionDescription;
     color: map_get($colors, font);
-    font-size: 20px;
-    line-height: 30px;
-    padding: 0 2rem;
+    padding-left: $font-size * 2;
+    padding-right: $font-size * 2;
   }
 
   @include over850() {
     width: 33%;
-    align-self: flex-start;
     padding-bottom: 0;
   }
 
   &__description {
-    font-size: 24px;
-    line-height: 36px;
-    padding: 0 50px;
+    @include sectionDescriptionLarge();
+    padding: 0 $section-margin;
   }
 
 }

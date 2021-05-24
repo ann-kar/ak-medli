@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Front.scss";
 import hero from "../../../assets/hero.svg";
-
+import ellipse from "../../../assets/ellipse.svg";
 function Front() {
 
     return (
@@ -11,7 +11,9 @@ function Front() {
                 <img className="Front__banner__image" src={hero} alt="woman reading & smiling"/>
             </div>
             <div className="Front__main">
-                <h1 className="Front__main__title">Check your well-being</h1>
+                <h1 className="Front__main__title">Check y
+                    <img className="Front__main__title__accent" src={ellipse} alt="ellipse"/>
+                    ur well-being</h1>
                 <h2 className="Front__main__description">We’re sure that deciding to check on your health is a big step,
                     even
                     if it doesn’t bother in any way. </h2>

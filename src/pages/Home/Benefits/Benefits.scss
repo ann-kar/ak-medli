@@ -8,7 +8,6 @@
 
   &__title {
     @extend %sectionTitle;
-    padding-top: $section-margin * 3;
     padding-bottom: 36px;
   }
 
@@ -21,11 +20,33 @@
 
     @include over540 {
       display: flex;
+      flex-wrap: wrap;
       width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      overflow-x: scroll;
+    }
+  }
+
+  @include over540() {
+    &__title {
+   text-align: center;
     }
 
+    &__description {
+      text-align: center;
+      max-width: 70vw;
+    }
   }
+
+  @include over1120() {
+    &__title {
+      @include sectionTitleLarge;
+      max-width: 850px;
+    }
+
+    &__description {
+      @include sectionDescriptionLarge;
+      text-align: center;
+      max-width: 600px;
+    }
+  }
+
 }

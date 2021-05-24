@@ -12,7 +12,7 @@
     margin-bottom: $section-margin * 2;
   }
 
+  @include over1120() {
+    margin-bottom: $section-margin * 3;
+  }
 }
-
-
-

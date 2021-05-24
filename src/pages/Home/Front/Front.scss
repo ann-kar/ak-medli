@@ -1,17 +1,16 @@
 @import "../../../styles/global";
 
 .Front {
-  margin-bottom: $section-margin;
-  color: map_get($colors, font);
   display: flex;
   flex-wrap: wrap;
+  color: map_get($colors, font);
 
   & > * {
     width: 100%;
   }
 
   &__banner {
-    margin-bottom: $section-margin;
+    margin-bottom: $font-size * 2;
 
     &__image {
       width: 100%;
@@ -22,25 +21,30 @@
 
     &__title {
       @extend %sectionTitle;
-      margin-bottom: $section-margin / 2;
+      margin-bottom: 1rem;
+
+      &__accent {
+        margin-left: 0;
+        height: $font-size * 1.25;
+      }
     }
 
     &__description {
       @extend %sectionDescription;
-      margin-bottom: $section-margin * 0.75;
+      margin-bottom: $font-size * 1.5;
     }
 
     &__button {
       @extend %button;
     }
-      }
+  }
 
   @include over850() {
 
     &__banner {
       width: 60%;
       order: 2;
-      padding-top: 50px;
+      padding-top: $section-margin;
     }
 
     &__main {
@@ -50,6 +54,29 @@
 
       &__button {
         width: 255px;
+      }
+    }
+  }
+
+  @include over1120() {
+
+    &__main {
+
+      &__title {
+        @include sectionTitleLarge();
+        &__accent {
+          margin-left: 0;
+          height: $font-size * 2;
+        }
+      }
+
+      &__description {
+        @include sectionDescriptionLarge();
+      }
+
+      &__button {
+        @extend %button;
+        @include sectionDescriptionLarge();
       }
     }
   }

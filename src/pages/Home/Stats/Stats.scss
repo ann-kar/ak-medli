@@ -5,15 +5,18 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 64px;
+  margin-bottom: 64px;
 
   @include over850() {
-    margin-bottom: 220px;
+    margin-top: $section-margin * 2;
+    margin-bottom: $section-margin * 2;
     justify-content: space-between;
   }
 
-  @include over1000() {
-    margin-bottom: 220px;
+  @include over1120() {
+    margin-top: $section-margin * 4;
+    margin-bottom: $section-margin * 4;
     justify-content: space-around;
   }
 }
