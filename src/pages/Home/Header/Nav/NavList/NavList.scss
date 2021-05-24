@@ -1,19 +1,35 @@
 @import "../../../../../styles/global";
 
-$li-margin: 10px;
-
-@include over1000() { $li-margin: 20px }
-@include over1240() { $li-margin: 40px }
-
 .NavList {
   list-style-type: none;
   font-family: map_get($fonts, main);
-  font-size: 24px;
-  line-height: 50px;
-  padding-right: 24px;
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
+
+  & > li {
+
+    .NavList__link-active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        right: -16px;
+        top: calc(50% - 4px);
+        background: map_get($colors, main);
+        border-radius: 50%;
+
+        @include over850() {
+          left: calc(50% - 4px);
+          top: 100%;
+        }
+      }
+    }
+  }
 
   @include over850() {
-
     display: flex;
     justify-items: flex-end;
     padding-right: 0;
@@ -52,7 +68,5 @@ $li-margin: 10px;
         margin-left: 30px;
       }
     }
-
   }
-
 }
