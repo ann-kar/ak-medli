@@ -42,7 +42,7 @@
 
   @include over850() {
 
-    margin-bottom: calc((100vw - 48px) * 0.48 * 0.4 + 150px);
+    margin-bottom: calc((100vw - 48px) * 0.48 * 0.4 + 100px);
 
     &__title {
       max-width: 850px;

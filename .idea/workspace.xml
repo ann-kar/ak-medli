@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="365e9e24-2e28-45be-9286-72907b50e32e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/pages/Home/Benefits/Benefits.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Benefits/Benefits.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Community/Community.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Community/Community.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/Home/Community/Community.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/Home/Benefits/Benefits.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="307">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -189,6 +199,14 @@
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="Benefits" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="medli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medli" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="Community" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -248,12 +266,12 @@
       <option name="presentableId" value="Default" />
       <updated>1621758155676</updated>
       <workItem from="1621758157128" duration="39401000" />
-      <workItem from="1621843581006" duration="31937000" />
+      <workItem from="1621843581006" duration="32190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71338000" />
+    <option name="totallyTimeSpent" value="71591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -699,15 +717,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Home/Community/Community.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="493">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Home/Benefits/Benefits.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="307">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="26" />
         </state>
       </provider>
     </entry>

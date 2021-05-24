@@ -7,7 +7,7 @@
   justify-content: flex-start;
 
   &__title, &__description {
-    padding-bottom: 36px;
+    padding-bottom: $font-size * 2;
   }
 
   &__items {
@@ -20,6 +20,10 @@
 
   @include over850() {
     padding-bottom: $section-margin * 2;
+
+    &__description {
+      padding-bottom: $font-size * 4;
+    }
   }
 
   @include over1120() {
